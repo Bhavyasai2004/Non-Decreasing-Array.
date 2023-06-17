@@ -11,7 +11,7 @@ bool isPossible(int *arr, int n)
             b++;
             if (b > 1)
               return false;
-            if (i==1 ||  (arr[i - 2] < arr[i]))
+            if (i==1 ||  (arr[i - 2] <= arr[i]))
               arr[i-1] = arr[i];
             else
               arr[i] = arr[i-1];
